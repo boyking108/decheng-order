@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>新營得正飲料點餐</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>新營得正點餐單</h1>
+  <form id="order-form">
+    <label>姓名/暱稱：
+      <input type="text" id="name" required>
+    </label><br><br>
+
+    <label>選擇飲料：
+      <select id="drink" required>
+        <option value="">請選擇</option>
+        <option value="紅茶">紅茶</option>
+        <option value="綠茶">綠茶</option>
+        <option value="珍奶">珍珠奶茶</option>
+        <option value="冬瓜檸檬">冬瓜檸檬</option>
+      </select>
+    </label><br><br>
+
+    <label>甜度：
+      <select id="sugar">
+        <option value="正常">正常</option>
+        <option value="少糖">少糖</option>
+        <option value="半糖">半糖</option>
+        <option value="微糖">微糖</option>
+        <option value="無糖">無糖</option>
+      </select>
+    </label><br><br>
+
+    <label>冰塊：
+      <select id="ice">
+        <option value="正常">正常</option>
+        <option value="少冰">少冰</option>
+        <option value="微冰">微冰</option>
+        <option value="去冰">去冰</option>
+        <option value="熱飲">熱飲</option>
+      </select>
+    </label><br><br>
+
+    <button type="submit">送出</button>
+  </form>
+
+  <h2>目前訂單</h2>
+  <ul id="order-list"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
